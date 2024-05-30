@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".AdminLoginActivity">
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/jd_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+
+    <EditText
+        android:id="@+id/admin_username_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="管理员用户名"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/logo_image_view"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:id="@+id/admin_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/admin_username_edit_text"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/edittext_background"
+        android:padding="12dp"
+        android:drawablePadding="10dp"/>
+
+    <Button
+        android:id="@+id/admin_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/admin_password_edit_text"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="12dp"/>
+</RelativeLayout>

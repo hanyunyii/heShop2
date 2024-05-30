@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/jd_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/user_register_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="用户注册"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/logo_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/user_login_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="用户登录"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/user_register_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/admin_login_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="管理员登录"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_background"
+        android:layout_below="@id/user_login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
